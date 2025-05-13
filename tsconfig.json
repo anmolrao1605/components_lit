@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "ES2021",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "lib": ["DOM", "ES2021"],
+      "declaration": true,
+      "outDir": "dist",
+      "rootDir": "src",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+  
+      // 👇 Add these two lines
+      "experimentalDecorators": true,
+      "useDefineForClassFields": false
+    },
+    "include": ["src"]
+  }
+  
