@@ -4,17 +4,25 @@ import { customElement, property } from 'lit/decorators.js';
 @customElement('my-button')
 export class MyButton extends LitElement {
   static styles = css`
+    :host {
+      display: inline-block;
+
+      position: var(--my-button-position, static);
+      margin: var(--my-button-margin, 0);
+    }
+
     button {
-      background: #6200ea;
-      color: white;
-      padding: 0.6em 1.2em;
-      border: none;
-      border-radius: 6px;
+      background: var(--my-button-bg, #6200ea);
+      color: var(--my-button-color, white);
+      padding: var(--my-button-padding, 0.6em 1.2em);
+      border: var(--my-button-border, none);
+      border-radius: var(--my-button-radius, 6px);
       cursor: pointer;
+      font-size: var(--my-button-font-size, 1rem);
     }
 
     button:hover {
-      background: #3700b3;
+      background: var(--my-button-hover-bg, #3700b3);
     }
   `;
 

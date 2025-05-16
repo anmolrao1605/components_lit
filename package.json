@@ -1,4 +1,20 @@
 {
+  "name": "lit-my-button",
+  "version": "1.0.14",
+  "description": "A reusable button web component built with Lit",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": ["lit", "web-component", "button"],
+  "author": "annmol",
+  "license": "MIT",
   "dependencies": {
     "lit": "^3.3.0"
   },
@@ -7,10 +23,5 @@
     "esbuild": "^0.25.4",
     "typescript": "^5.8.3",
     "vite": "^6.3.5"
-  },
-  "scripts": {
-  "dev": "vite",
-  "build": "tsc"
-}
-
+  }
 }
